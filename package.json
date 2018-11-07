@@ -5,14 +5,12 @@
   "main": "./main/index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "electron ./main/index.dev.js",
-    "serve": "vue-cli-service serve",
+    "serve": "node .electron-vue-3/serve",
     "build": "vue-cli-service build && electron-builder",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "concurrently": "^4.0.1",
     "electron-util": "^0.10.1",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
@@ -25,6 +23,7 @@
     "@vue/eslint-config-airbnb": "^4.0.0",
     "@vue/test-utils": "^1.0.0-beta.20",
     "babel-eslint": "^10.0.1",
+    "chokidar": "^2.0.4",
     "electron": "^3.0.7",
     "electron-builder": "^20.29.0",
     "electron-debug": "^2.0.0",
@@ -34,6 +33,7 @@
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "lint-staged": "^7.2.2",
+    "lodash.debounce": "^4.0.8",
     "vue-template-compiler": "^2.5.17"
   },
   "build": {
@@ -55,7 +55,7 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/recommended",
+      "plugin:vue/essential",
       "@vue/airbnb"
     ],
     "rules": {
