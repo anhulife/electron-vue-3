@@ -1,34 +1,23 @@
 # electron-vue-3
 
-## Project setup
-```
+### Overview
+
+Electron Vue 3 is a boilerplate for rapid Electron app that development. it is built with Vue Cli 3.
+
+### Features
+
+- All Vue Cli 3 features
+- simple and clear NPM scripts
+- Auto reload when main script changed
+
+### Getting Started
+```shell
+# install dependencies
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
+# develop with auto reload
 npm run serve
-```
 
-### Compiles and minifies for production
-```
+# build electron app
 npm run build
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
